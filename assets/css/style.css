@@ -1,0 +1,70 @@
+:root {
+  --font: 'Epilogue', sans-serif;
+  --purple: #bbb3e6;
+  --dark: #000000;
+  --light: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--light);
+  font-family: var(--font);
+  width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--purple);
+  font-size: 1rem;
+}
+
+header h2 {
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .card {
+  display: flex;
+  flex-direction: column;
+}
+
+main .card img {
+  position: relative;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+main .card .text_area {
+  position: absolute;
+  z-index: 1;
+}
+
+main .card .text_area .tag {
+  background-color: var(--light);
+  color: var(--dark);
+  border-radius: 0.8rem;
+}
+
+main .card .text_area p {
+  font-weight: 700;
+  font-size: 2rem;
+}
