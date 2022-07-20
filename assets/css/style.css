@@ -1,8 +1,8 @@
 :root {
   --font: 'Epilogue', sans-serif;
-  --purple: #bbb3e6;
-  --dark: #000000;
-  --light: #ffffff;
+  --purple: #d5bdaf;
+  --dark: #edede9;
+  --light: #bc6c25;
 }
 
 * {
@@ -58,6 +58,12 @@ main .card img {
   border-radius: 1rem;
   height: 35rem;
   width: 100%;
+  filter: grayscale(100%);
+}
+
+main .card img:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
 }
 
 main .card .text_area {
@@ -74,19 +80,13 @@ main .card .text_area .tag {
   margin-top: 1rem;
 }
 
-main .card .text_area p {
-  font-weight: 700;
-  font-size: 2rem;
-  margin-top: 1rem;
-}
-
 @media (min-width: 700px) {
   main {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 930px) {
+@media (min-width: 1400px) {
   main {
     grid-template-areas:
       'A B B'
@@ -108,4 +108,4 @@ main .card .text_area p {
   main div:nth-child(4) {
     grid-area: D;
   }
-} */
+}
