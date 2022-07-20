@@ -15,8 +15,7 @@
 
 ## About
 
-A fully responsive page of a photography work portfolio. It's part of [Rocketseat's Explorer Bootcamp](https://www.rocketseat.com.br/explorer).
-
+A fully responsive page of a photography work portfolio.
 ![Demo page preview](./assets/img/demo.png)
 
 ## Run
